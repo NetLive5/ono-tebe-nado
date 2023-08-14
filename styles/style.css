@@ -144,13 +144,12 @@
 	margin-left: 78px;
 }
 .lots {
-	width: 1440px;
 	margin: auto;
-	display: grid;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	min-height: 100%;
 }
+
 .lots__heading {
 	display: flex;
 	flex-direction: column;
@@ -161,21 +160,25 @@
 	font-weight: 700;
 	line-height: normal;
 	text-transform: uppercase;
-	margin: 6px 13px 26px 40px;
+	margin: 5px 28px 25px 88px;
 }
+
 .lots__card-list {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap; /* Allow cards to move to new line */
 	justify-content: center;
 	gap: 25px;
+	margin: 0 auto;
 }
+
 .lots__card-list-item {
 	display: flex;
 	flex-direction: column;
-	width: 430px;
+	width: 100%; /* Take up full container width */
+	max-width: 430px; /* Limit maximum width of card */
 	height: 450px;
 }
+
 .card {
 	display: flex;
 	flex-direction: column;
@@ -217,7 +220,7 @@
 	line-height: 120%;
 }
 .lots__look-more-link {
-	padding: 30px 1108px 2px 40px;
+	padding: 32px 1px 3px 90px;
 	font-size: 20px;
 	text-underline-offset: 4px;
 }
